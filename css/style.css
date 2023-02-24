@@ -93,6 +93,11 @@
   height: 107px;
 }
 
+.svg-hands {
+  width: 99px;
+  height: 99px;
+}
+
 .button {
   font-family: "Effra";
   font-style: normal;
@@ -105,6 +110,9 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .button_orange {
