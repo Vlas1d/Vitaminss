@@ -4,7 +4,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100%;
+  width: 100vw;
   height: 110px;
   padding: 30px 30px 30px 35px;
   z-index: 999;
@@ -98,6 +98,11 @@
   height: 99px;
 }
 
+.svg-dialoge {
+  width: 86px;
+  height: 98px;
+}
+
 .button {
   font-family: "Effra";
   font-style: normal;
@@ -170,6 +175,10 @@
   color: #FF7D4E;
 }
 
+.button-link_white {
+  color: #FFF;
+}
+
 .decor__circle {
   border-radius: 50%;
 }
@@ -236,6 +245,10 @@ main {
   position: relative;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -254,6 +267,14 @@ h5 {
   font-weight: 500;
   font-size: 30px;
   line-height: 36px;
+}
+
+h6 {
+  font-family: "Effra";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 button {
