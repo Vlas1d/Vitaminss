@@ -14,6 +14,44 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 13px 24px 10px;
+}
+
+.header__burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+}
+
+.header__burger span {
+  width: 24px;
+  height: 2.5px;
+  margin-top: -4px;
+  background: #000;
+  border-radius: 2px;
+}
+
+.header__burger span::after,
+.header__burger span::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background: #000;
+  border-radius: 2px;
+}
+
+.header__burger span::after {
+  -webkit-transform: translate(0, 6px);
+      -ms-transform: translate(0, 6px);
+          transform: translate(0, 6px);
+}
+
+.header__burger span::before {
+  -webkit-transform: translate(0, -8px);
+      -ms-transform: translate(0, -8px);
+          transform: translate(0, -8px);
 }
 
 .header__end {
@@ -575,7 +613,13 @@ button {
   margin: 0 auto;
 }
 
-@media (max-width: 920px) {
+@media (min-width: 1100.1px) {
+  .header__burger {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
   .header {
     padding: 0px;
     width: 100vw;
@@ -585,9 +629,7 @@ button {
   }
 
   .header__view {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    padding: 13px 24px 10px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -596,8 +638,8 @@ button {
             justify-content: space-between;
   }
 
-  .header__logo {
-    margin: 0px auto;
+  .header__shopping-card {
+    margin-left: 0px !important;
   }
 
   .header__end {
@@ -607,10 +649,37 @@ button {
   .header__end > *:not(.header__shopping-card) {
     display: none;
   }
+}
 
+@media (max-width: 920px) {
   .svg-logo {
     width: 33.6px;
     height: 40px;
+  }
+
+  .svg-healthy1 {
+    width: 46.5px;
+    height: 38px;
+  }
+
+  .svg-healthy2 {
+    width: 39px;
+    height: 43.5px;
+  }
+
+  .svg-healthy3 {
+    width: 38px;
+    height: 48px;
+  }
+
+  .svg-hands {
+    width: 50px;
+    height: 50px;
+  }
+
+  .svg-hands-heart {
+    width: 97px;
+    height: 90px;
   }
 }
 
@@ -639,6 +708,11 @@ button {
   h1 {
     font-size: 24px;
     line-height: 29px;
+  }
+
+  h5 {
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .container {
