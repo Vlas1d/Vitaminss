@@ -8,10 +8,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap&_v=20230310230355" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap&_v=20230317215556" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.min.css?_v=20230310230355">
-    <link rel="stylesheet" href="css/product.min.css?_v=20230310230355">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230317215556">
+    <link rel="stylesheet" href="css/product.min.css?_v=20230317215556">
     <title>Vitamins</title>
 </head>
 
@@ -34,8 +34,15 @@
             <a href="quiz.html" class="button button__small button_orange">Take the quiz</a>
         </div>
     </div>
-    <div class="header__hide-menu">
-
+    <div class="header__menu menu">
+        <div class="menu__head">
+            <button class="menu__close"></button>
+        </div>
+        <ul>
+            <li>Shop</li>
+            <li>Information</li>
+        </ul>
+        <a href="">Take a quiz</a>
     </div>
 </header>
     <main>
@@ -44,9 +51,10 @@
                 <picture><source srcset="img/cataloge/product.webp" type="image/webp"><img src="img/cataloge/product.png" alt="vitamins"></picture>
             </div>
             <div class="product__content content-prod container">
-                <div class="content-prod__slider 4swiper">
-                    <div class="4swiper-wrapper">
-                        <div class="content-prod__slide 4swiper-slide">
+                <div class="content-prod__slider swiper">
+                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-wrapper">
+                        <div class="content-prod__slide swiper-slide">
                             <div class="content-prod__title">
                                 <a href="#">Vitamins & Dietary Supplements</a>
                                 <h3>Metagenics - 500-C Methoxyflavone</h3>
@@ -69,11 +77,13 @@
                                 <div class="add-prod__autoship">
                                     <p>Autoship this item every</p>
                                     <span class="add-prod__list">
-
+                                        <span>30</span>
+                                        <img class="svg-arrow-bottom-m" src="img/icons/arrow1.svg"
+                                            style="transform: rotate(90deg);" alt="arrow-bottom">
                                     </span>
                                     <p>days</p>
                                     <div class="add-prod__switch">
-
+                                        <div></div>
                                     </div>
                                 </div>
                                 <div class="add-prod__add">
@@ -86,12 +96,27 @@
                                 <p>500-C Methoxyflavone is a synergistic formula that features a specialized complex of
                                     bioflavonoids combined with vitamin C.*</p>
                                 <ul class="descript-prod__list">
-                                    <li>Citrus bioflavonoid complex</li>
-                                    <li>Provides potent antioxidant protection and supports healthy immune system
-                                        function*</li>
-                                    <li>Supports healthy collagen production, the main component of connective tissue*
+                                    <li>
+                                        <img class="svg-list-marker" src="img/icons/list-marker.svg"
+                                            alt="arrow-bottom">
+                                        Citrus bioflavonoid complex
                                     </li>
-                                    <li>This product is non-GMO, gluten free, and vegetarian</li>
+                                    <li>
+                                        <img class="svg-list-marker" src="img/icons/list-marker.svg"
+                                            alt="arrow-bottom">
+                                        Provides potent antioxidant protection and supports healthy immune system
+                                        function*
+                                    </li>
+                                    <li>
+                                        <img class="svg-list-marker" src="img/icons/list-marker.svg"
+                                            alt="arrow-bottom">
+                                        Supports healthy collagen production, the main component of connective tissue*
+                                    </li>
+                                    <li>
+                                        <img class="svg-list-marker" src="img/icons/list-marker.svg"
+                                            alt="arrow-bottom">
+                                        This product is non-GMO, gluten free, and vegetarian
+                                    </li>
                                 </ul>
                             </div>
                             <div class="content-prod__info">
@@ -131,6 +156,44 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="personal-pack container">
+            <h5>You may also like</h5>
+            <div class="personal-pack__goods">
+                <div class="goods-list__card goods-card">
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
+    <a class="goods-card__category">Vitamins & Dietary Supplements</a>
+    <a href="product.html" class="goods-card__name">
+        <p>Ortho B Complex</p>
+    </a>
+    <p class="goods-card__price">$61.98</p>
+</div>
+                <div class="goods-list__card goods-card">
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
+    <a class="goods-card__category">Vitamins & Dietary Supplements</a>
+    <a href="product.html" class="goods-card__name">
+        <p>Ortho B Complex</p>
+    </a>
+    <p class="goods-card__price">$61.98</p>
+</div>
+                <div class="goods-list__card goods-card">
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
+    <a class="goods-card__category">Vitamins & Dietary Supplements</a>
+    <a href="product.html" class="goods-card__name">
+        <p>Ortho B Complex</p>
+    </a>
+    <p class="goods-card__price">$61.98</p>
+</div>
+                <div class="goods-list__card goods-card">
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
+    <a class="goods-card__category">Vitamins & Dietary Supplements</a>
+    <a href="product.html" class="goods-card__name">
+        <p>Ortho B Complex</p>
+    </a>
+    <p class="goods-card__price">$61.98</p>
+</div>
             </div>
         </section>
 
@@ -178,8 +241,8 @@
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230310230355"></script>
-    <script src="js/script.min.js?_v=20230310230355"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230317215556"></script>
+    <script src="js/script.min.js?_v=20230317215556"></script>
 </footer>
 </body>
 

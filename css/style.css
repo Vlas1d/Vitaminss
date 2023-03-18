@@ -14,7 +14,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 13px 24px 10px;
 }
 
 .header__burger {
@@ -77,8 +76,20 @@
   display: none;
 }
 
-.header__hide-menu {
-  display: none;
+.header__menu {
+  position: fixed;
+  top: 0px;
+  left: -110vw;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.header__menu.open {
+  left: 0px;
 }
 
 .footer {
@@ -95,7 +106,7 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 350px;
+  min-height: 350px;
   padding: 60px 0px 55px;
 }
 
@@ -110,7 +121,7 @@
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 80%;
+  max-height: 197px;
   margin-top: 55px;
 }
 
@@ -273,6 +284,11 @@
   height: 60px;
 }
 
+.svg-list-marker {
+  width: 30px;
+  height: 2px;
+}
+
 .button {
   font-family: "Effra";
   font-style: normal;
@@ -365,6 +381,12 @@
 
 .button-link_white:hover {
   border-bottom: 2px solid #FFF;
+}
+
+.list input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
 .decor__circle {
@@ -473,6 +495,11 @@
 
 .goods-card picture {
   margin: 0px auto 44px;
+}
+
+.goods-card picture img {
+  width: 189px;
+  height: 211px;
 }
 
 .goods-card__category {
@@ -613,9 +640,53 @@ button {
   margin: 0 auto;
 }
 
+.personal-pack {
+  padding: 100px 0px;
+}
+
+.personal-pack__goods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
 @media (min-width: 1100.1px) {
   .header__burger {
     display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .personal-pack {
+    padding: 81px 0px 35px;
+  }
+
+  .personal-pack h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .personal-pack__goods {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
   }
 }
 
@@ -649,12 +720,117 @@ button {
   .header__end > *:not(.header__shopping-card) {
     display: none;
   }
+
+  .footer-info {
+    padding: 31px 0px 55px;
+  }
+
+  .footer-info img {
+    margin-bottom: 26px;
+  }
+
+  .footer-info a:has(img) img {
+    margin-bottom: 0px !important;
+  }
+
+  .footer-info > * p {
+    top: -52px;
+  }
+
+  .footer-info > * a {
+    line-height: 146%;
+    margin-bottom: 14px;
+  }
+
+  .footer-info__copyright {
+    display: none;
+  }
+
+  .button__middle {
+    height: 50px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .reviews {
+    padding: 20px 0px 20px;
+  }
+
+  .reviews__slide {
+    padding: 28px 20px 20px;
+    height: 358px;
+  }
+
+  .reviews__slide h6 {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 16px 0px 12px;
+  }
+
+  .reviews__slide p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .reviews__author span {
+    font-size: 14px;
+    line-height: 19px;
+    margin: -2px 0px 0px;
+  }
+
+  .goods-list {
+    gap: 15px;
+  }
+
+  .goods-card {
+    padding: 50px 20px 20px;
+    height: 405px;
+  }
+
+  .goods-card picture {
+    margin: 0px auto 35px;
+  }
+
+  .goods-card picture img {
+    width: 171px;
+    height: 191px;
+  }
+
+  .goods-card__category {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .goods-card__name {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .goods-card__price {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 29px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 @media (max-width: 920px) {
   .svg-logo {
     width: 33.6px;
     height: 40px;
+  }
+
+  .svg-logo-big {
+    width: 42px;
+    height: 50px;
   }
 
   .svg-healthy1 {
@@ -678,8 +854,18 @@ button {
   }
 
   .svg-hands-heart {
-    width: 97px;
-    height: 90px;
+    width: 50px;
+    height: 46px;
+  }
+
+  .svg-dialoge {
+    width: 50px;
+    height: 57px;
+  }
+
+  .svg-list-marker {
+    width: 20px;
+    height: 2px;
   }
 }
 
@@ -713,6 +899,11 @@ button {
   h5 {
     font-size: 14px;
     line-height: 17px;
+  }
+
+  h6 {
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .container {
