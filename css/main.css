@@ -57,6 +57,7 @@
   position: absolute;
   bottom: -27px;
   right: -187px;
+  pointer-events: none;
 }
 
 .main-content__links {

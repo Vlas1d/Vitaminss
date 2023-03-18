@@ -266,6 +266,10 @@
   .cataloge-content__menu .cataloge-menu > label {
     display: none;
   }
+
+  .cataloge-content__menu .cataloge-menu img {
+    display: none;
+  }
 }
 
 @media (max-width: 1100px) {
