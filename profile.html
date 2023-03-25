@@ -8,10 +8,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap&_v=20230325025305" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap&_v=20230325121210" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.min.css?_v=20230325025305">
-    <link rel="stylesheet" href="css/profile.min.css?_v=20230325025305">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230325121210">
+    <link rel="stylesheet" href="css/profile.min.css?_v=20230325121210">
     <title>Profile</title>
 </head>
 
@@ -98,19 +98,89 @@
         <section class="profile container">
             <div class="profile__menu">
                 <ul>
-                    <li>Subscriptions</li>
-                    <li>Orders</li>
-                    <li>Account Overview</li>
-                    <li>Payment methods</li>
-                    <li>Change Password</li>
+                    <input type="radio" checked name="acc-menu" id="subs">
+                    <label for="subs">Subscriptions</label>
+                    <input type="radio" name="acc-menu" id="ord">
+                    <label for="ord">Orders</label>
+                    <input type="radio" name="acc-menu" id="overv">
+                    <label for="overv">Account Overview</label>
+                    <input type="radio" name="acc-menu" id="pay">
+                    <label for="pay">Payment methods</label>
+                    <input type="radio" name="acc-menu" id="pass">
+                    <label for="pass">Change Password</label>
                     <li>Sign out</li>
                 </ul>
             </div>
-            <div class="profile__content prof-window">
+            <div class="profile__content profile__subscr prof-window">
                 <h3>Subscriptions</h3>
                 <picture><source srcset="img/profile/subscriptions.webp" type="image/webp"><img src="img/profile/subscriptions.jpg" alt="goods"></picture>
                 <picture><source srcset="img/profile/subscriptions.webp" type="image/webp"><img src="img/profile/subscriptions.jpg" alt="goods"></picture>
                 <picture><source srcset="img/profile/subscriptions.webp" type="image/webp"><img src="img/profile/subscriptions.jpg" alt="goods"></picture>
+            </div>
+            <div class="profile__content profile__order prof-window">
+                <h3>Orders</h3>
+                <picture><source srcset="img/profile/order.webp" type="image/webp"><img src="img/profile/order.jpg" alt="goods"></picture>
+                <picture><source srcset="img/profile/order.webp" type="image/webp"><img src="img/profile/order.jpg" alt="goods"></picture>
+            </div>
+            <div class="profile__content profile__overview prof-window">
+                <h3>Account Overview</h3>
+                <form class="form-check__delivery">
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                    </div>
+                    <div>
+                        <label for="address1">Address Line 1</label>
+                        <input type="text" name="address" id="address1" placeholder="Address 1">
+                    </div>
+                    <div>
+                        <label for="address2">Address Line 2</label>
+                        <input type="text" name="address" id="address2" placeholder="Address 2">
+                    </div>
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" placeholder="City">
+                    </div>
+                    <div class="form-check__two-items">
+                        <div>
+                            <label for="state">State / Province</label>
+                            <input type="text" name="state" id="state" placeholder="State / Province">
+                        </div>
+                        <div>
+                            <label for="zip">ZIP / Postal Code</label>
+                            <input type="number" name="zip" id="zip" placeholder="ZIP / Postal Code">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                    </div>
+                </form>
+            </div>
+            <div class="profile__content profile__payment prof-window">
+                <h3>Payment methods</h3>
+                <form>
+                    <div>
+                        <label for="card-num">Card Number</label>
+                        <input type="number" name="card-num" id="card-num" placeholder="XXXX XXXX XXXX XXXX">
+                    </div>
+                    <div>
+                        <label for="card-date">Expiration</label>
+                        <input type="text" name="card-date" id="card-date" placeholder="MM/YY">
+                    </div>
+                    <div>
+                        <label for="cvc">CVC</label>
+                        <input type="password" name="cvc" id="cvc" placeholder="CVC">
+                    </div>
+                </form>
             </div>
         </section>
     </main>
@@ -157,8 +227,8 @@
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230325025305"></script>
-    <script src="js/script.min.js?_v=20230325025305"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230325121210"></script>
+    <script src="js/script.min.js?_v=20230325121210"></script>
 </footer>
 </body>
 
