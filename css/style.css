@@ -16,6 +16,44 @@
   display: flex;
 }
 
+.header__min {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__min_logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__min_logo-mob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.header__min_logo-mob p {
+  font-family: "Effra";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.header__min_logo-mob img {
+  position: absolute;
+  left: 30px;
+  top: 43%;
+}
+
 .header__burger {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +111,8 @@
 }
 
 .header__end.hide {
-  display: none;
+  opacity: 0;
+  z-index: -2;
 }
 
 .menu {
@@ -316,6 +355,29 @@ body:has(.shop-card.open)::after {
   background: #FAF8F6;
 }
 
+.footer-mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+.footer-mid img {
+  margin-left: 191px;
+}
+
+.footer-mid a {
+  opacity: 0.75;
+  margin-right: 31px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
 .footer-info {
   position: relative;
   display: -webkit-box;
@@ -507,6 +569,26 @@ body:has(.shop-card.open)::after {
 .svg-list-marker {
   width: 30px;
   height: 2px;
+}
+
+.svg-google {
+  width: 22px;
+  height: 22px;
+}
+
+.svg-apple {
+  width: 20px;
+  height: 24px;
+}
+
+.svg-facebook {
+  width: 24px;
+  height: 24px;
+}
+
+.svg-footer-logos {
+  width: 335px;
+  height: 34px;
 }
 
 .button {
@@ -838,6 +920,14 @@ h3 {
   line-height: 48px;
 }
 
+h4 {
+  font-family: "Effra";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+}
+
 h5 {
   font-family: "Effra";
   font-style: normal;
@@ -884,6 +974,10 @@ button {
 }
 
 @media (min-width: 1100.1px) {
+  .header__min_logo-mob {
+    display: none;
+  }
+
   .header__burger {
     display: none;
   }
@@ -934,6 +1028,14 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  .header__min {
+    height: 70px;
+  }
+
+  .header__min_logo {
+    display: none;
   }
 
   .header__shopping-card {
@@ -1093,6 +1195,35 @@ button {
   .svg-list-marker {
     width: 20px;
     height: 2px;
+  }
+
+  .svg-footer-logos {
+    width: 280px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-mid {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer-mid img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+
+  .footer-mid a {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
