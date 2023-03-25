@@ -1273,6 +1273,11 @@ button {
     line-height: 29px;
   }
 
+  h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
   h5 {
     font-size: 14px;
     line-height: 17px;
