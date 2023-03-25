@@ -8,6 +8,11 @@
   padding: 128px 0px 50px;
 }
 
+.cataloge-slider picture img {
+  width: 1084px;
+  height: 843px;
+}
+
 .cataloge-slider .swiper-slide-next,
 .cataloge-slider .swiper-slide-prev {
   opacity: 0.3;
@@ -205,6 +210,11 @@
   background: #5F9DCA;
 }
 
+.pain-relief picture img {
+  width: 414px;
+  height: 252px;
+}
+
 .pain-relief__text {
   max-width: 493px;
   width: 100%;
@@ -275,6 +285,11 @@
 @media (max-width: 1100px) {
   .cataloge-slider {
     padding: 70px 0px 0px;
+  }
+
+  .cataloge-slider picture img {
+    width: 330px;
+    height: 259px;
   }
 
   .cataloge-slider .swiper-slide-next,
@@ -391,6 +406,11 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  .pain-relief picture img {
+    width: 193px;
+    height: 117px;
   }
 
   .pain-relief__text {

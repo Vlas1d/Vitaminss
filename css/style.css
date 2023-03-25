@@ -516,6 +516,11 @@ body:has(.shop-card.open)::after {
   height: 15px;
 }
 
+.svg-arrow-bottom-m {
+  width: 9px;
+  height: 15px;
+}
+
 .svg-healthy1 {
   width: 103px;
   height: 84px;
